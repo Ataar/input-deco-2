@@ -1,0 +1,22 @@
+what is ngModel In Angular?
+
+1) In Angular, ngModel is a derective that provides two-way data binding between form input element 
+and component's property. 
+
+2) It is part of Angular's template-driven forms and requires FormsModule to work.
+
+3)it is mainly used for handling form inputs nad also supports form validation like required etc.
+
+4)Used for binding form inputs like <input>, <textarea>, and <select> to component properties.
+
+eg:-
+
+<input type="text" [(ngModel)]="username">
+<p>You entered: {{ username }}</p>
+
+
+ouput:-
+
+export class ExampleComponent {
+  username: string = '';
+}

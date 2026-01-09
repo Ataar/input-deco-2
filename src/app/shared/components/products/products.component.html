@@ -1,0 +1,117 @@
+
+<!-- ngModel Two way data binding -->
+
+ <div class="col-md-4 offset-md-4">
+<div class="form-group">
+<input [(ngModel)]="productName" type="text" class="form-control" placeholder="Add Products">
+</div>
+<p  class="alert alert-info text-center"*ngIf="productName"><strong [innerHTML]="productName"></strong></p>
+</div>  
+
+
+
+
+
+
+
+
+
+
+<!-- 33333333333333333333333333333333333333333333 -->
+ 
+
+<!-- <div class="col-md-4 offset-md-4">
+  <div class="form-group">
+  <input [value]="productName" (input)="updateProductName($event)" type="text" class="form-control" placeholder="Add Products">
+  </div>
+  <p  class="alert alert-info text-center"><strong [innerHTML]="productName"></strong></p>
+  </div>  -->
+
+
+<!-- 3333333333333333333333333333333333333333333333 -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 22222222222222222222222222222222222222222 -->
+
+<!-- Simple way to transfer data from Template to TS -->
+
+<!-- <div class="col-md-4 offset-md-4">
+  <div class="form-group">
+  <input type="text"  (keyup)="product($event)"
+   class="form-control" placeholder="Add Products">
+  </div> -->
+  <!-- here $event represent event.target means it represent input
+   field -->
+  <!-- <p class="alert alert-info text-center">{{productName}}</p> -->
+   <!-- <p class="alert alert-info text-center"><strong [innerHTML]="productName"></strong></p>
+  </div> -->
+
+<!-- 22222222222222222222222222222222222222222222222222 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--111111111111111111111111111111111111111111111111111111111  -->
+
+<!-- <div class="btns">
+    <button [disabled]="productCount>=5" (click)="onProductAdd()" class="btn btn-primary">Add Product</button>
+    <button [disabled]="productCount==0" (click)="onProductRemove()"   class="btn btn-danger">Remove Product</button>
+  </div>
+  
+ <div class="d-flex justify-content-center mt-3">
+    <p class="alert alert-danger">{{productCount}} <span style="font-family: Georgia, serif;">Products In Cart</span></p>
+  </div> -->
+  
+  <!-- <div class="center-alert">
+    <span class="alert alert-danger">{{productCount}} Products In Cart</span>
+  </div>
+   -->
+
+<!--111111111111111111111111111111111111111111111111111111111  -->
