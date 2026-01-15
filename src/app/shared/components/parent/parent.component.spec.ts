@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TmdbComponent } from './tmdb.component';
+import { ParentComponent } from './parent.component';
 
-describe('TmdbComponent', () => {
-  let component: TmdbComponent;
-  let fixture: ComponentFixture<TmdbComponent>;
+describe('ParentComponent', () => {
+  let component: ParentComponent;
+  let fixture: ComponentFixture<ParentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TmdbComponent ]
+      declarations: [ ParentComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TmdbComponent);
+    fixture = TestBed.createComponent(ParentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

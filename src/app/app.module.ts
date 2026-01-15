@@ -2,32 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ProductComponent } from './shared/components/product/product.component';
-import { ProductsComponent } from './shared/components/products/products.component';
-import { TodoComponent } from './shared/components/todo/todo.component';
-import { StudentComponent } from './shared/components/student/student.component';
-import { TmdbComponent } from './shared/components/tmdb/tmdb.component';
-import { FormsModule } from '@angular/forms';
-import { TestComponent } from './shared/components/test/test.component'; // Import this
-import { BtnComponent } from './shared/components/test/btn/btn';
+import { ParentComponent } from './shared/components/parent/parent.component';
+import { ChildComponent } from './shared/components/child/child.component';
+import { ProductListComponent } from './shared/components/product-list/product-list.component';
+import { ProductCardComponent } from './shared/components/product-card/product-card.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
-    ProductsComponent,
-    TodoComponent,
-    StudentComponent,
-    TmdbComponent,
-    TestComponent,
-    BtnComponent,
+    ParentComponent,
+    ChildComponent,
+    ProductListComponent,
+    ProductCardComponent,
     
   ],
   imports: [
     BrowserModule,
-    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

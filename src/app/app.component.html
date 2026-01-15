@@ -1,46 +1,11 @@
-<div class="wrapper">
+<h1 class="gradient-bg">
+  All Products
+</h1>
 
-  <!-- Buttons -->
-  <div class="tab-buttons mt-5">
-    <button class="btn btn-primary" (click)="setTab('reviews')">Reviews</button>
-    <button class="btn btn-primary" (click)="setTab('desc')">Description</button>
-  </div>
-
-  <!-- Content -->
-  <div class="tab-content">
-
-
-
-
-    <!-- Reviews -->
-    <ng-container *ngIf="activeTab === 'reviews'">
-      <p>
-        {{ showMoreReview ? reviewFullText : reviewShortText }}
-      </p>
-      <span class="read-toggle" (click)="toggleReview()">
-        {{ showMoreReview ? 'Read Less' : 'Read More' }}
-      </span>
-
-    </ng-container>
-
-
-
-
-
-    <!-- Description -->
-    <ng-container *ngIf="activeTab === 'desc'">
-      <p>
-        {{ showMoreDesc ? descFullText : descShortText }}
-      </p>
-
-      <span class="read-toggle" (click)="toggleDesc()">
-        {{ showMoreDesc ? 'Read Less' : 'Read More' }}
-      </span>
-    </ng-container>
-
-
-
-
-  </div>
-
+<div class="container mt-5">
+<!-- <app-parent></app-parent> -->
+ <app-product-list></app-product-list>
+ 
 </div>
+  
+
