@@ -1,0 +1,65 @@
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+//background: #343a40;
+   background: linear-gradient(
+    180deg,
+    rgba(29, 20, 20, 0.85),
+    rgba(15, 14, 14, 0.85)
+   );
+  padding: 15px;
+  transition: 0.3s ease;
+  z-index: 1050;
+  backdrop-filter: blur(-8px);
+
+}
+
+
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+  color: #ffc107;
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+}
+
+/* Desktop par sidebar disable */
+@media (min-width: 992px) {
+  .sidebar {
+    left: 0;
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
