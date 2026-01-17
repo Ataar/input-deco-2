@@ -10,14 +10,23 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
     isOpen = false;
 
+    
+
   toggleSidebar() {
+    
     this.isOpen = !this.isOpen;
   }
 
+  onMenuClick() {
+  
+  this.closeSidebar()
+}
   closeSidebar() {
     this.isOpen = false;
   }
+
 }
