@@ -14,9 +14,12 @@ export class PostCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openTrailer(url: string) {
-  window.open(url, '_blank');
-}
+//   openTrailer(post:Iposts) {
+//   window.open(post.trailerUrl, '_blank');
+// }
 
+  openTrailer(url_link:string) {
+  window.open(url_link, '_blank');
+}
 
 }
