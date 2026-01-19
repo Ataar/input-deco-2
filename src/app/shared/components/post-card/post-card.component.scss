@@ -1,0 +1,91 @@
+.movie-card {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.movie-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Header */
+.movie-card .card-header {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  border-bottom: none;
+}
+
+.movie-card .card-header h5 {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.movie-card .card-header small {
+  opacity: 0.85;
+  font-size: 12px;
+}
+
+/* Body */
+.movie-card .card-body {
+  padding: 1.25rem;
+}
+
+.movie-card .card-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Movie Details */
+.movie-card ul li {
+  padding: 3px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.movie-card ul li strong {
+  color: #222;
+}
+
+/* Footer */
+.movie-card .card-footer {
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+}
+
+.movie-card .btn {
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 12px;
+  transition: all 0.25s ease;
+}
+
+/* Buttons hover */
+.movie-card .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.movie-card .btn-success:hover {
+  background-color: #218838;
+}
+
+.movie-card .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .movie-card .card-text {
+    font-size: 13px;
+  }
+
+  .movie-card ul li {
+    font-size: 12px;
+  }
+}
